@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál es el resultado de typeof null en JavaScript?",
+    "options": ["\"null\"", "\"object\"", "\"undefined\"", "\"number\""],
+    "correctIndex": 1
+  },
+  {
+    "id": 2,
+    "question": "¿Qué palabra clave define una variable con scope de bloque?",
+    "options": ["var", "let", "const", "static"],
+    "correctIndex": 1
+  },
+  {
+    "id": 3,
+    "question": "¿Qué devuelve una función que no tiene return explícito?",
+    "options": ["null", "undefined", "0", "false"],
+    "correctIndex": 1
+  },
+  {
+    "id": 4,
+    "question": "¿Cuál es la forma correcta de crear una función flecha?",
+    "options": [
+      "function => () {}",
+      "() => {}",
+      "() -> {}",
+      "=> () {}"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 5,
+    "question": "¿Qué es un closure en JavaScript?",
+    "options": [
+      "Una función que se ejecuta inmediatamente",
+      "Una función que recuerda su scope incluso después de ejecutarse",
+      "Una función sin parámetros",
+      "Una función que solo se puede ejecutar una vez"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 6,
+    "question": "¿Qué método se usa para transformar un array sin mutarlo?",
+    "options": ["push()", "splice()", "map()", "sort()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 7,
+    "question": "¿Qué hace el operador spread (...) en arrays?",
+    "options": [
+      "Concatena arrays mutando el original",
+      "Copia elementos de un array en otro sin mutar",
+      "Elimina elementos duplicados",
+      "Convierte un array en un objeto"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 8,
+    "question": "¿Qué imprime console.log(this) en el contexto global del navegador?",
+    "options": ["undefined", "window", "globalThis", "null"],
+    "correctIndex": 1
+  },
+  {
+    "id": 9,
+    "question": "¿Qué hace async/await?",
+    "options": [
+      "Convierte funciones síncronas en asíncronas",
+      "Permite escribir código asíncrono con sintaxis similar a código síncrono",
+      "Bloquea el event loop",
+      "Ejecuta promesas en paralelo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 10,
+    "question": "¿Qué método convierte un JSON string en un objeto?",
+    "options": ["JSON.parse()", "JSON.stringify()", "Object.fromJSON()", "parseJSON()"],
+    "correctIndex": 0
+  },
+  {
+    "id": 11,
+    "question": "¿Qué es el event loop?",
+    "options": [
+      "Un algoritmo para ordenar arrays",
+      "El mecanismo que gestiona la ejecución de tareas asíncronas",
+      "Una API del DOM",
+      "Una función recursiva"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 12,
+    "question": "¿Qué imprime el siguiente código?\n\nlet x = 1;\nfunction test() {\n  console.log(x);\n  let x = 2;\n}\ntest();",
+    "options": [
+      "1",
+      "2",
+      "undefined",
+      "ReferenceError"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": 13,
+    "question": "¿Qué método se usa para detener la propagación de un evento?",
+    "options": ["event.stop()", "event.preventDefault()", "event.stopPropagation()", "event.cancel()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 14,
+    "question": "¿Qué es el prototype en JavaScript?",
+    "options": [
+      "Una copia de un objeto",
+      "Un mecanismo para heredar propiedades entre objetos",
+      "Una API del navegador",
+      "Un tipo de dato primitivo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 15,
+    "question": "¿Qué hace Promise.all()?",
+    "options": [
+      "Ejecuta promesas en serie",
+      "Ejecuta promesas en paralelo y falla si una falla",
+      "Ejecuta promesas en paralelo y nunca falla",
+      "Convierte callbacks en promesas"
+    ],
+    "correctIndex": 1
+  }
+]
