@@ -3,9 +3,12 @@ import './App.css'
 import { Container, Typography, Stack } from '@mui/material'
 import { JavaScriptLogo } from './components/JavaScriptLogo'
 import { Start } from './components/Start'
+import { useQuestionsStore } from './store/questions'
 
 function App() {
-  const [count, setCount] = useState(0) //20.49
+  const questions = useQuestionsStore(state => state.questions)
+  console.log(questions);
+  
 
   return (
     <main>
