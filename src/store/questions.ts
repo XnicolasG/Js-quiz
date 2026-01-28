@@ -13,22 +13,12 @@ export const useQuestionsStore = create<State>((set) => {
         currentQuestion: 0,
 
         fetchQuestions: async (limit: number) => {
-            set({
-                questions: [
-                    {
-                        "id": 1,
-                        "question": "¿Cuál es el resultado de typeof null?",
-                        "options": [
-                            "\"null\"",
-                            "\"object\"",
-                            "\"undefined\"",
-                            "\"primitive\""
-                        ],
-                        "correctAnswer": 1
-                    }
-                ]
-            })
-
+            const response = await fetch('http://localhost:5173/data.json')
+            if(!response.ok) throw new Error('Something went wrong !')
+            const result = await response.json()
+            console.log(result);
+            const questions = result.sort(() => Math.random() - 0.5).slice(0, limit)
+            set({ questions})
         }
     }
 })
