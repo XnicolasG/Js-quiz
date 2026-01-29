@@ -16,8 +16,8 @@ function App() {
       <Container maxWidth='sm'>
         <Stack direction='row' gap={2} alignItems='center' justifyContent='center' >
           <JavaScriptLogo />
-          <Typography variant='h5' component='h1' >
-            <h1>JavaScript Quiz</h1>
+          <Typography variant='h3' >
+            JavaScript Quiz
           </Typography>
         </Stack>
         {questions?.length === 0 && <Start /> }

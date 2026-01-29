@@ -1,24 +1,48 @@
 import { create } from 'zustand'
 import { type Question } from '../types'
+import  confetti  from 'canvas-confetti'
 
 interface State {
     questions: Question[]
     currentQuestion: number;
-    fetchQuestions: (limit: number) => void
+    fetchQuestions: (limit: number) => void,
+    selectAnswer: (questionId: number, answerIndex: number) => void
 }
 
-export const useQuestionsStore = create<State>((set) => {
+export const useQuestionsStore = create<State>((set, get) => {
     return {
         questions: [],
         currentQuestion: 0,
 
         fetchQuestions: async (limit: number) => {
             const response = await fetch('http://localhost:5173/data.json')
-            if(!response.ok) throw new Error('Something went wrong !')
+            if (!response.ok) throw new Error('Something went wrong !')
             const result = await response.json()
             console.log(result);
             const questions = result.sort(() => Math.random() - 0.5).slice(0, limit)
-            set({ questions})
+            set({ questions })
+        },
+        selectAnswer: (questionId: number, answerIndex: number) => {
+            const { questions } = get()
+            //clonar objeto de questions
+            const newQuestions = structuredClone(questions)
+            // encontramos id de la pregunta actual en el nuevo objeto
+            const questionIndex = newQuestions.findIndex(q => q.id === questionId)
+            // guardamos objeto completo de esa pregunta
+            const questionInfo = newQuestions[questionIndex]
+            // validamos si la respuesta es correcta o no
+            const isCorrectUserAnswer = questionInfo.correctAnswer === answerIndex
+
+            if (isCorrectUserAnswer) confetti()
+
+            //actualizar información del objeto
+            newQuestions[questionIndex] = {
+                ...questionInfo,
+                isCorrectUserAnswer,
+                userSelectedAnswer: answerIndex
+            }
+            set({ questions: newQuestions })
         }
+
     }
 })
