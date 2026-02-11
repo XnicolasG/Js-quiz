@@ -42,6 +42,15 @@ export const useQuestionsStore = create<State>((set, get) => {
                 userSelectedAnswer: answerIndex
             }
             set({ questions: newQuestions })
+        },
+
+        goNextQuestion: () => {
+            const { currentQuestion, questions} = get()
+            const nextQuestion = currentQuestion + 1
+
+            if (nextQuestion < questions.length){
+                set({ currentQuestion: nextQuestion})
+            }
         }
 
     }

@@ -23,6 +23,8 @@ const Question = ({ info }: { info: Question }) => {
         return 'transparent'
     }
 
+    
+
     return (
         <Card variant='outlined' sx={{ p: 2, textAlign: 'left', marginTop: 2 }}>
             <Typography variant='h5'>
@@ -38,7 +40,7 @@ const Question = ({ info }: { info: Question }) => {
 
                     <ListItem key={index} disablePadding divider>
                         <ListItemButton
-                            disabled={info.userSelectedAnswer != null}
+                            disabled={info.userSelectedAnswer != null} 
                             sx={{ backgroundColor: getBackgroundColor(index) }}
                             onClick={handleClick(index)} >
                             <ListItemText primary={answer} sx={{ textAlign: 'center' }} />
