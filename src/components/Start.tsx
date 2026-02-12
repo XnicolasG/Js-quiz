@@ -9,7 +9,7 @@ export const Start = () => {
     }
     return (
         <Button onClick={handleClick} variant='contained' >
-        Empezar!
+            Empezar!
         </Button>
     )
 }
