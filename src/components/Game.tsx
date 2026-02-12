@@ -1,7 +1,8 @@
 import { IconButton, Stack } from '@mui/material'
-import {ArrowBackIos,  ArrowForwardIos} from '@mui/icons-material';
+import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 import { useQuestionsStore } from '../store/questions'
 import { Question } from './Questions'
+import { Footer } from './Footer';
 
 
 export const Game = () => {
@@ -19,11 +20,13 @@ export const Game = () => {
                     <ArrowBackIos />
                 </IconButton>
                 {currentQuestion + 1} / {questions.length}
-                <IconButton onClick={goNextQuestion} disabled={currentQuestion >= questions.length -1}>
+                <IconButton onClick={goNextQuestion} disabled={currentQuestion >= questions.length - 1}>
                     <ArrowForwardIos />
                 </IconButton>
             </Stack>
             <Question info={questionInfo} />
+            <Footer />
+
         </>
     )
 } 

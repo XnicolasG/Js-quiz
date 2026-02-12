@@ -24,7 +24,6 @@ function App() {
         {questions?.length > 0 && <Game />}
         
       </Container>
-
     </main>
   )
 }
