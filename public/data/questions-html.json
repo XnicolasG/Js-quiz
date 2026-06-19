@@ -1,0 +1,207 @@
+[
+  {
+    "id": 1,
+    "topic": "html",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Cuál es la etiqueta semántica correcta para el contenido principal de una página?",
+    "options": ["<main>", "<section>", "<article>", "<content>"],
+    "correctIndex": 0
+  },
+  {
+    "id": 2,
+    "topic": "html",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Qué etiqueta se usa para insertar una imagen?",
+    "options": ["<img>", "<image>", "<pic>", "<media>"],
+    "correctIndex": 0
+  },
+  {
+    "id": 3,
+    "topic": "html",
+    "difficulty": "beginner",
+    "type": "best-practice",
+    "question": "¿Cuál atributo es obligatorio en una etiqueta <img> por accesibilidad?",
+    "options": ["src", "alt", "title", "aria-label"],
+    "correctIndex": 1
+  },
+  {
+    "id": 4,
+    "topic": "html",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué etiqueta se usa para definir navegación principal?",
+    "options": ["<nav>", "<menu>", "<header>", "<aside>"],
+    "correctIndex": 0
+  },
+  {
+    "id": 5,
+    "topic": "html",
+    "difficulty": "intermediate",
+    "type": "code",
+    "question": "¿Qué estructura HTML es válida?",
+    "code": "<p><div>Texto</div></p>",
+    "options": ["Es válido", "No es válido porque <div> no puede ir dentro de <p>", "No es válido porque <p> no puede tener hijos", "Es válido pero no recomendado"],
+    "correctIndex": 1
+  },
+  {
+    "id": 6,
+    "topic": "html",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué etiqueta se usa para contenido independiente como un post o tarjeta?",
+    "options": ["<section>", "<article>", "<div>", "<main>"],
+    "correctIndex": 1
+  },
+  {
+    "id": 7,
+    "topic": "html",
+    "difficulty": "intermediate",
+    "type": "trick",
+    "question": "¿Cuál de estas etiquetas NO es semántica?",
+    "options": ["<header>", "<footer>", "<div>", "<aside>"],
+    "correctIndex": 2
+  },
+  {
+    "id": 8,
+    "topic": "html",
+    "difficulty": "advanced",
+    "type": "concept",
+    "question": "¿Qué atributo permite cargar imágenes responsivas según el tamaño de pantalla?",
+    "options": ["srcset", "sizes", "responsive", "media"],
+    "correctIndex": 0
+  },
+  {
+    "id": 9,
+    "topic": "html",
+    "difficulty": "advanced",
+    "type": "code",
+    "question": "¿Qué imprime el navegador al renderizar este código?",
+    "code": "<span>Hola <p>Mundo</p></span>",
+    "options": ["Renderiza normalmente", "Error de sintaxis", "El navegador reestructura el DOM automáticamente", "No muestra nada"],
+    "correctIndex": 2
+  },
+  {
+    "id": 10,
+    "topic": "html",
+    "difficulty": "advanced",
+    "type": "best-practice",
+    "question": "¿Qué atributo debe usarse para mejorar SEO en enlaces externos?",
+    "options": ["rel=\"noopener noreferrer\"", "target=\"_blank\"", "aria-label", "referrerpolicy=\"no-referrer\""],
+    "correctIndex": 0
+  },
+  {
+    "id": 11,
+    "topic": "html",
+    "difficulty": "advanced",
+    "type": "concept",
+    "question": "¿Qué etiqueta se usa para definir metadatos del documento?",
+    "options": ["<meta>", "<head>", "<info>", "<settings>"],
+    "correctIndex": 0
+  },
+  {
+    "id": 12,
+    "topic": "html",
+    "difficulty": "ssr",
+    "type": "trick",
+    "question": "¿Cuál es el comportamiento correcto de <script defer>?",
+    "options": [
+      "Bloquea el renderizado",
+      "Se ejecuta inmediatamente al descargarse",
+      "Se ejecuta después de parsear el HTML pero antes del DOMContentLoaded",
+      "Se ejecuta después del DOMContentLoaded"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 13,
+    "topic": "html",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué sucede con este código?",
+    "code": "<label for=\"email\">Email</label>\n<input id=\"correo\" />",
+    "options": [
+      "Funciona correctamente",
+      "El label no se asocia al input",
+      "El input no se renderiza",
+      "El navegador corrige el id automáticamente"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 14,
+    "topic": "html",
+    "difficulty": "ssr",
+    "type": "concept",
+    "question": "¿Qué atributo mejora la performance al cargar imágenes fuera de pantalla?",
+    "options": ["loading=\"lazy\"", "defer", "async", "fetchpriority=\"low\""],
+    "correctIndex": 0
+  },
+  {
+    "id": 15,
+    "topic": "html",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Qué etiqueta se usa para títulos principales?",
+    "options": ["<title>", "<h1>", "<header>", "<strong>"],
+    "correctIndex": 1
+  },
+  {
+    "id": 16,
+    "topic": "html",
+    "difficulty": "intermediate",
+    "type": "code",
+    "question": "¿Qué resultado produce este código?",
+    "code": "<ul>\n  <li>Uno</li>\n  <div>Dos</div>\n</ul>",
+    "options": [
+      "Renderiza normalmente",
+      "El navegador mueve <div> fuera de <ul>",
+      "Error de sintaxis",
+      "El navegador elimina el <div>"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 17,
+    "topic": "html",
+    "difficulty": "advanced",
+    "type": "concept",
+    "question": "¿Qué atributo permite especificar el idioma del documento?",
+    "options": ["lang", "locale", "xml:lang", "language"],
+    "correctIndex": 0
+  },
+  {
+    "id": 18,
+    "topic": "html",
+    "difficulty": "advanced",
+    "type": "best-practice",
+    "question": "¿Cuál es la forma correcta de marcar un botón accesible?",
+    "options": ["<div onclick=\"...\">", "<button>", "<span role=\"button\">", "<a role=\"button\">"],
+    "correctIndex": 1
+  },
+  {
+    "id": 19,
+    "topic": "html",
+    "difficulty": "ssr",
+    "type": "trick",
+    "question": "¿Qué etiqueta NO debe usarse para maquetar layouts modernos?",
+    "options": ["<div>", "<table>", "<section>", "<header>"],
+    "correctIndex": 1
+  },
+  {
+    "id": 20,
+    "topic": "html",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué hace el navegador con este código?",
+    "code": "<html>\n  <body>\n    <p>Hola\n    <p>Mundo\n  </body>\n</html>",
+    "options": [
+      "Renderiza dos párrafos correctamente",
+      "Error de sintaxis",
+      "El navegador autocierra los <p> y corrige la estructura",
+      "No muestra nada"
+    ],
+    "correctIndex": 2
+  }
+]

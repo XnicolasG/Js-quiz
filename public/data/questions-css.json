@@ -1,0 +1,214 @@
+[
+  {
+    "id": 101,
+    "topic": "css",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Qué propiedad se usa para cambiar el color del texto?",
+    "options": ["color", "text-color", "font-color", "foreground"],
+    "correctIndex": 0
+  },
+  {
+    "id": 102,
+    "topic": "css",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Qué unidad es relativa al tamaño de la fuente del elemento?",
+    "options": ["px", "em", "vh", "%"],
+    "correctIndex": 1
+  },
+  {
+    "id": 103,
+    "topic": "css",
+    "difficulty": "beginner",
+    "type": "code",
+    "question": "¿Qué hace este código?",
+    "code": "p {\n  font-weight: bold;\n}",
+    "options": ["Hace el texto más grande", "Hace el texto en negrita", "Cambia el color del texto", "Subraya el texto"],
+    "correctIndex": 1
+  },
+  {
+    "id": 104,
+    "topic": "css",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Qué propiedad controla el espacio entre líneas?",
+    "options": ["line-height", "spacing", "letter-spacing", "row-gap"],
+    "correctIndex": 0
+  },
+  {
+    "id": 105,
+    "topic": "css",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué selector selecciona todos los elementos hijos directos?",
+    "options": ["A B", "A > B", "A + B", "A ~ B"],
+    "correctIndex": 1
+  },
+  {
+    "id": 106,
+    "topic": "css",
+    "difficulty": "intermediate",
+    "type": "code",
+    "question": "¿Qué color tendrá el texto?",
+    "code": "p {\n  color: red;\n}\n#main p {\n  color: blue;\n}",
+    "options": ["Rojo", "Azul", "Depende del navegador", "Ninguno"],
+    "correctIndex": 1
+  },
+  {
+    "id": 107,
+    "topic": "css",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué propiedad define un contenedor flex?",
+    "options": ["display: block", "display: inline", "display: flex", "display: grid"],
+    "correctIndex": 2
+  },
+  {
+    "id": 108,
+    "topic": "css",
+    "difficulty": "intermediate",
+    "type": "trick",
+    "question": "¿Cuál NO es una unidad válida en CSS?",
+    "options": ["rem", "vw", "pt", "dp"],
+    "correctIndex": 3
+  },
+  {
+    "id": 109,
+    "topic": "css",
+    "difficulty": "intermediate",
+    "type": "code",
+    "question": "¿Qué hace este código?",
+    "code": ".box {\n  margin: 10px 20px;\n}",
+    "options": [
+      "10px arriba y abajo, 20px izquierda y derecha",
+      "20px arriba y abajo, 10px izquierda y derecha",
+      "10px en todos los lados",
+      "20px en todos los lados"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 110,
+    "topic": "css",
+    "difficulty": "advanced",
+    "type": "concept",
+    "question": "¿Qué propiedad define el comportamiento de un elemento en un grid?",
+    "options": ["grid-area", "grid-flow", "grid-template", "grid-align"],
+    "correctIndex": 0
+  },
+  {
+    "id": 111,
+    "topic": "css",
+    "difficulty": "advanced",
+    "type": "code",
+    "question": "¿Qué valor tendrá width?",
+    "code": ".box {\n  width: 50vw;\n}",
+    "options": [
+      "50% del ancho del contenedor",
+      "50% del ancho del viewport",
+      "50px",
+      "Depende del padre"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 112,
+    "topic": "css",
+    "difficulty": "advanced",
+    "type": "best-practice",
+    "question": "¿Qué propiedad se recomienda para centrar elementos en flex?",
+    "options": ["align-items", "justify-content", "place-content", "margin: auto"],
+    "correctIndex": 2
+  },
+  {
+    "id": 113,
+    "topic": "css",
+    "difficulty": "advanced",
+    "type": "trick",
+    "question": "¿Qué selector tiene mayor especificidad?",
+    "options": ["#id", ".class", "div", "*"],
+    "correctIndex": 0
+  },
+  {
+    "id": 114,
+    "topic": "css",
+    "difficulty": "advanced",
+    "type": "code",
+    "question": "¿Qué hace este código?",
+    "code": ".box {\n  position: absolute;\n  top: 0;\n  left: 0;\n}",
+    "options": [
+      "Posiciona el elemento relativo al viewport",
+      "Posiciona el elemento relativo al primer padre posicionado",
+      "Posiciona el elemento relativo al body siempre",
+      "No afecta la posición"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 115,
+    "topic": "css",
+    "difficulty": "ssr",
+    "type": "concept",
+    "question": "¿Qué propiedad activa el stacking context?",
+    "options": ["z-index", "position: relative", "opacity < 1", "Todas las anteriores"],
+    "correctIndex": 3
+  },
+  {
+    "id": 116,
+    "topic": "css",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué sucede con este código?",
+    "code": ".box {\n  width: 100px;\n  padding: 20px;\n  box-sizing: content-box;\n}",
+    "options": [
+      "El ancho total será 100px",
+      "El ancho total será 140px",
+      "El ancho total será 160px",
+      "El padding no afecta el ancho"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 117,
+    "topic": "css",
+    "difficulty": "ssr",
+    "type": "trick",
+    "question": "¿Cuál propiedad NO dispara un reflow?",
+    "options": ["width", "height", "transform", "margin"],
+    "correctIndex": 2
+  },
+  {
+    "id": 118,
+    "topic": "css",
+    "difficulty": "ssr",
+    "type": "best-practice",
+    "question": "¿Cuál es la mejor práctica para animaciones de alto rendimiento?",
+    "options": ["Animar width y height", "Animar transform y opacity", "Animar margin", "Animar border"],
+    "correctIndex": 1
+  },
+  {
+    "id": 119,
+    "topic": "css",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué propiedad controla el espacio entre letras?",
+    "options": ["letter-spacing", "word-spacing", "line-height", "gap"],
+    "correctIndex": 0
+  },
+  {
+    "id": 120,
+    "topic": "css",
+    "difficulty": "advanced",
+    "type": "code",
+    "question": "¿Qué hace este código?",
+    "code": ".container {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n}",
+    "options": [
+      "Crea columnas fijas de 200px",
+      "Crea columnas responsivas que se ajustan automáticamente",
+      "Crea una sola columna",
+      "Crea columnas solo si hay espacio exacto"
+    ],
+    "correctIndex": 1
+  }
+]
