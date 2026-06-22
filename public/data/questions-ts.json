@@ -1,0 +1,240 @@
+[
+  {
+    "id": 401,
+    "topic": "typescript",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Qué es TypeScript?",
+    "options": [
+      "Un superset tipado de JavaScript",
+      "Un reemplazo de JavaScript",
+      "Un framework frontend",
+      "Un motor de ejecución"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 402,
+    "topic": "typescript",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Qué extensión de archivo usa TypeScript?",
+    "options": [".ts", ".tsx", ".js", ".tjs"],
+    "correctIndex": 0
+  },
+  {
+    "id": 403,
+    "topic": "typescript",
+    "difficulty": "beginner",
+    "type": "code",
+    "question": "¿Qué tipo infiere TypeScript aquí?",
+    "code": "let x = 5;",
+    "options": ["any", "number", "unknown", "never"],
+    "correctIndex": 1
+  },
+  {
+    "id": 404,
+    "topic": "typescript",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Cuál es el tipo para valores que nunca ocurren?",
+    "options": ["void", "never", "unknown", "undefined"],
+    "correctIndex": 1
+  },
+  {
+    "id": 405,
+    "topic": "typescript",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Cuál es la diferencia entre type e interface?",
+    "options": [
+      "type es más flexible para uniones e intersecciones",
+      "interface no puede extenderse",
+      "type no puede tener propiedades opcionales",
+      "interface no puede usarse con objetos"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 406,
+    "topic": "typescript",
+    "difficulty": "intermediate",
+    "type": "code",
+    "question": "¿Qué tipo tiene la variable result?",
+    "code": "const result = [1, 2, 3].map(n => n.toString());",
+    "options": ["number[]", "string[]", "any[]", "unknown[]"],
+    "correctIndex": 1
+  },
+  {
+    "id": 407,
+    "topic": "typescript",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué es type narrowing?",
+    "options": [
+      "Reducir un tipo amplio a uno más específico",
+      "Convertir un tipo en otro",
+      "Eliminar tipos del proyecto",
+      "Crear tipos más grandes"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 408,
+    "topic": "typescript",
+    "difficulty": "intermediate",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "function test(x: string | number) {\n  if (typeof x === 'string') console.log('str');\n  else console.log('num');\n}\ntest(5);",
+    "options": ["str", "num", "undefined", "Error"],
+    "correctIndex": 1
+  },
+  {
+    "id": 409,
+    "topic": "typescript",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué tipo representa un valor que puede ser cualquier cosa?",
+    "options": ["any", "unknown", "never", "object"],
+    "correctIndex": 0
+  },
+  {
+    "id": 410,
+    "topic": "typescript",
+    "difficulty": "advanced",
+    "type": "concept",
+    "question": "¿Qué diferencia hay entre any y unknown?",
+    "options": [
+      "unknown es más seguro porque requiere verificación antes de usarlo",
+      "any es más seguro",
+      "unknown solo funciona en funciones",
+      "unknown convierte todo en never"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 411,
+    "topic": "typescript",
+    "difficulty": "advanced",
+    "type": "code",
+    "question": "¿Qué tipo infiere TypeScript para value?",
+    "code": "const value = { a: 1, b: 'x' } as const;",
+    "options": [
+      "{ a: number; b: string }",
+      "{ readonly a: 1; readonly b: 'x' }",
+      "Record<string, any>",
+      "unknown"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 412,
+    "topic": "typescript",
+    "difficulty": "advanced",
+    "type": "concept",
+    "question": "¿Qué es un generic?",
+    "options": [
+      "Un tipo que recibe parámetros para ser reutilizable",
+      "Un tipo que no tiene restricciones",
+      "Un tipo que solo funciona con arrays",
+      "Un tipo exclusivo de clases"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 413,
+    "topic": "typescript",
+    "difficulty": "advanced",
+    "type": "code",
+    "question": "¿Qué tipo tiene T?",
+    "code": "function identity<T>(value: T): T {\n  return value;\n}",
+    "options": ["any", "unknown", "El tipo que se pase al llamar la función", "never"],
+    "correctIndex": 2
+  },
+  {
+    "id": 414,
+    "topic": "typescript",
+    "difficulty": "advanced",
+    "type": "trick",
+    "question": "¿Qué hace keyof?",
+    "options": [
+      "Devuelve los valores de un objeto",
+      "Devuelve las claves de un tipo como uniones de strings",
+      "Convierte un tipo en string",
+      "Crea un tipo nuevo vacío"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 415,
+    "topic": "typescript",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué tipo tiene result?",
+    "code": "type A = { a: number };\ntype B = { b: string };\ntype C = A & B;\nconst result: C = { a: 1, b: 'x' };",
+    "options": ["{ a: number }", "{ b: string }", "{ a: number; b: string }", "never"],
+    "correctIndex": 2
+  },
+  {
+    "id": 416,
+    "topic": "typescript",
+    "difficulty": "ssr",
+    "type": "concept",
+    "question": "¿Qué hace el utility type Partial<T>?",
+    "options": [
+      "Hace todas las propiedades opcionales",
+      "Hace todas las propiedades readonly",
+      "Elimina propiedades",
+      "Convierte T en any"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 417,
+    "topic": "typescript",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué tipo tiene result?",
+    "code": "type T = Exclude<string | number | boolean, string>;",
+    "options": ["string", "number | boolean", "boolean", "never"],
+    "correctIndex": 1
+  },
+  {
+    "id": 418,
+    "topic": "typescript",
+    "difficulty": "ssr",
+    "type": "trick",
+    "question": "¿Qué hace el operador satisfies?",
+    "options": [
+      "Valida que un valor cumpla un tipo sin cambiar su inferencia",
+      "Convierte un tipo en otro",
+      "Hace narrowing automático",
+      "Convierte unknown en any"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 419,
+    "topic": "typescript",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué tipo tiene result?",
+    "code": "function foo<T extends { id: number }>(x: T) {\n  return x.id;\n}\nconst result = foo({ id: 5, name: 'Nico' });",
+    "options": ["number", "string", "{ id: number }", "unknown"],
+    "correctIndex": 0
+  },
+  {
+    "id": 420,
+    "topic": "typescript",
+    "difficulty": "ssr",
+    "type": "best-practice",
+    "question": "¿Cuál es la mejor práctica al tipar funciones?",
+    "options": [
+      "Usar any para evitar errores",
+      "Dejar que TypeScript infiera siempre que sea posible",
+      "Tipar absolutamente todo manualmente",
+      "Evitar usar generics"
+    ],
+    "correctIndex": 1
+  }
+]

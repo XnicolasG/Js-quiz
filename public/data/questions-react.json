@@ -1,0 +1,239 @@
+[
+  {
+    "id": 301,
+    "topic": "react",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Qué es React?",
+    "options": [
+      "Una librería para construir interfaces de usuario",
+      "Un framework backend",
+      "Un motor de plantillas",
+      "Una base de datos"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 302,
+    "topic": "react",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Qué hook se usa para manejar estado?",
+    "options": ["useState", "useEffect", "useMemo", "useRef"],
+    "correctIndex": 0
+  },
+  {
+    "id": 303,
+    "topic": "react",
+    "difficulty": "beginner",
+    "type": "code",
+    "question": "¿Qué muestra este componente?",
+    "code": "function App() {\n  const [count] = useState(5);\n  return <p>{count}</p>;\n}",
+    "options": ["Nada", "5", "undefined", "Error"],
+    "correctIndex": 1
+  },
+  {
+    "id": 304,
+    "topic": "react",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Qué es JSX?",
+    "options": [
+      "Una extensión de JavaScript que permite escribir HTML dentro de JS",
+      "Un lenguaje nuevo",
+      "Un motor de plantillas",
+      "Una API del DOM"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 305,
+    "topic": "react",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué hook se usa para efectos secundarios?",
+    "options": ["useEffect", "useState", "useCallback", "useId"],
+    "correctIndex": 0
+  },
+  {
+    "id": 306,
+    "topic": "react",
+    "difficulty": "intermediate",
+    "type": "code",
+    "question": "¿Cuántas veces se ejecuta este useEffect?",
+    "code": "useEffect(() => {\n  console.log('Hola');\n}, []);",
+    "options": ["Nunca", "Una vez", "Cada render", "Depende del navegador"],
+    "correctIndex": 1
+  },
+  {
+    "id": 307,
+    "topic": "react",
+    "difficulty": "intermediate",
+    "type": "trick",
+    "question": "¿Qué provoca un re-render?",
+    "options": [
+      "Cambiar el estado",
+      "Cambiar las props",
+      "Cambiar el contexto",
+      "Todas las anteriores"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": 308,
+    "topic": "react",
+    "difficulty": "intermediate",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "const [value, setValue] = useState(0);\nsetValue(value + 1);\nconsole.log(value);",
+    "options": ["0", "1", "undefined", "Error"],
+    "correctIndex": 0
+  },
+  {
+    "id": 309,
+    "topic": "react",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué hace React.memo?",
+    "options": [
+      "Evita renders innecesarios si las props no cambian",
+      "Evita que un componente se monte",
+      "Evita que useEffect se ejecute",
+      "Convierte un componente en síncrono"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 310,
+    "topic": "react",
+    "difficulty": "advanced",
+    "type": "concept",
+    "question": "¿Qué hook se usa para memorizar funciones?",
+    "options": ["useCallback", "useMemo", "useEffect", "useReducer"],
+    "correctIndex": 0
+  },
+  {
+    "id": 311,
+    "topic": "react",
+    "difficulty": "advanced",
+    "type": "code",
+    "question": "¿Qué valor imprime este código?",
+    "code": "const ref = useRef(0);\nref.current++;\nconsole.log(ref.current);",
+    "options": ["0", "1", "undefined", "Error"],
+    "correctIndex": 1
+  },
+  {
+    "id": 312,
+    "topic": "react",
+    "difficulty": "advanced",
+    "type": "concept",
+    "question": "¿Qué hace useMemo?",
+    "options": [
+      "Memoriza valores derivados para evitar cálculos costosos",
+      "Memoriza funciones",
+      "Evita renders",
+      "Crea un estado global"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 313,
+    "topic": "react",
+    "difficulty": "advanced",
+    "type": "trick",
+    "question": "¿Qué sucede si llamas un hook dentro de un condicional?",
+    "options": [
+      "Nada",
+      "React lo permite",
+      "Rompe las reglas de hooks y causa errores",
+      "Se ejecuta solo una vez"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 314,
+    "topic": "react",
+    "difficulty": "advanced",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "function App() {\n  const [n, setN] = useState(0);\n  return <button onClick={() => setN(n + 1)}>{n}</button>;\n}",
+    "options": ["Siempre 0", "Incrementa en 1 cada click", "Error", "undefined"],
+    "correctIndex": 1
+  },
+  {
+    "id": 315,
+    "topic": "react",
+    "difficulty": "ssr",
+    "type": "concept",
+    "question": "¿Qué es la reconciliación en React?",
+    "options": [
+      "El proceso de comparar el Virtual DOM con el DOM real",
+      "El proceso de crear componentes",
+      "El proceso de ejecutar hooks",
+      "El proceso de limpiar efectos"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 316,
+    "topic": "react",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué sucede con este código?",
+    "code": "const [count, setCount] = useState(0);\nsetCount(count + 1);\nsetCount(count + 1);",
+    "options": [
+      "count termina en 2",
+      "count termina en 1",
+      "count termina en 0",
+      "Error"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 317,
+    "topic": "react",
+    "difficulty": "ssr",
+    "type": "concept",
+    "question": "¿Qué hook es ideal para manejar estados complejos?",
+    "options": ["useReducer", "useState", "useMemo", "useRef"],
+    "correctIndex": 0
+  },
+  {
+    "id": 318,
+    "topic": "react",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "function App() {\n  const [x] = useState({ a: 1 });\n  x.a = 5;\n  console.log(x.a);\n}",
+    "options": ["1", "5", "undefined", "Error"],
+    "correctIndex": 1
+  },
+  {
+    "id": 319,
+    "topic": "react",
+    "difficulty": "ssr",
+    "type": "trick",
+    "question": "¿Qué provoca un re-render en un componente hijo memoizado?",
+    "options": [
+      "Cambios en props primitivas",
+      "Cambios en props por referencia (objetos, arrays, funciones)",
+      "Cambios en el estado del padre",
+      "Todas las anteriores"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": 320,
+    "topic": "react",
+    "difficulty": "ssr",
+    "type": "best-practice",
+    "question": "¿Cuál es la mejor práctica para evitar renders innecesarios?",
+    "options": [
+      "Usar useMemo y useCallback sin criterio",
+      "Usar React.memo en componentes puros",
+      "Evitar usar estado",
+      "Usar solo componentes de clase"
+    ],
+    "correctIndex": 1
+  }
+]

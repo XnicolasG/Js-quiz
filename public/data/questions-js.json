@@ -1,0 +1,221 @@
+[
+  {
+    "id": 201,
+    "topic": "javascript",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Cuál es el tipo de dato de NaN?",
+    "options": ["number", "NaN", "undefined", "object"],
+    "correctIndex": 0
+  },
+  {
+    "id": 202,
+    "topic": "javascript",
+    "difficulty": "beginner",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "console.log(typeof null)",
+    "options": ["\"null\"", "\"object\"", "\"undefined\"", "\"null-type\""],
+    "correctIndex": 1
+  },
+  {
+    "id": 203,
+    "topic": "javascript",
+    "difficulty": "beginner",
+    "type": "concept",
+    "question": "¿Cuál es la diferencia entre let y var?",
+    "options": [
+      "let tiene scope de bloque y var scope de función",
+      "var no puede reasignarse",
+      "let crea variables globales",
+      "var es más moderno"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 204,
+    "topic": "javascript",
+    "difficulty": "beginner",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "console.log([1,2,3].map(n => { n * 2 }))",
+    "options": ["[2,4,6]", "[undefined, undefined, undefined]", "Error", "[1,2,3]"],
+    "correctIndex": 1
+  },
+  {
+    "id": 205,
+    "topic": "javascript",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué es un closure?",
+    "options": [
+      "Una función que recuerda su scope incluso después de ejecutarse",
+      "Una función que se ejecuta inmediatamente",
+      "Una función sin parámetros",
+      "Una función que solo se ejecuta una vez"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 206,
+    "topic": "javascript",
+    "difficulty": "intermediate",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "let x = 1;\nfunction test(){\n  console.log(x);\n  let x = 2;\n}\ntest();",
+    "options": ["1", "2", "undefined", "ReferenceError"],
+    "correctIndex": 3
+  },
+  {
+    "id": 207,
+    "topic": "javascript",
+    "difficulty": "intermediate",
+    "type": "concept",
+    "question": "¿Qué método NO muta el array original?",
+    "options": ["splice()", "sort()", "map()", "reverse()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 208,
+    "topic": "javascript",
+    "difficulty": "intermediate",
+    "type": "trick",
+    "question": "¿Cuál es el resultado de 0 == \"0\"?",
+    "options": ["true", "false", "undefined", "Error"],
+    "correctIndex": 0
+  },
+  {
+    "id": 209,
+    "topic": "javascript",
+    "difficulty": "intermediate",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "console.log([] == false)",
+    "options": ["true", "false", "undefined", "Error"],
+    "correctIndex": 0
+  },
+  {
+    "id": 210,
+    "topic": "javascript",
+    "difficulty": "advanced",
+    "type": "concept",
+    "question": "¿Qué es el event loop?",
+    "options": [
+      "Un algoritmo para ordenar arrays",
+      "El mecanismo que gestiona la ejecución de tareas asíncronas",
+      "Una API del DOM",
+      "Una función recursiva"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 211,
+    "topic": "javascript",
+    "difficulty": "advanced",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "console.log(Promise.resolve(5))",
+    "options": ["5", "Promise { 5 }", "undefined", "Error"],
+    "correctIndex": 1
+  },
+  {
+    "id": 212,
+    "topic": "javascript",
+    "difficulty": "advanced",
+    "type": "concept",
+    "question": "¿Qué hace async/await?",
+    "options": [
+      "Convierte funciones síncronas en asíncronas",
+      "Permite escribir código asíncrono con sintaxis similar a código síncrono",
+      "Ejecuta promesas en paralelo",
+      "Bloquea el event loop"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 213,
+    "topic": "javascript",
+    "difficulty": "advanced",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "console.log(typeof (() => {}))",
+    "options": ["\"object\"", "\"function\"", "\"arrow\"", "\"undefined\""],
+    "correctIndex": 1
+  },
+  {
+    "id": 214,
+    "topic": "javascript",
+    "difficulty": "advanced",
+    "type": "trick",
+    "question": "¿Cuál es el valor de this en el contexto global del navegador?",
+    "options": ["undefined", "window", "globalThis", "null"],
+    "correctIndex": 1
+  },
+  {
+    "id": 215,
+    "topic": "javascript",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "const obj = { a: 1 };\nconst copy = obj;\ncopy.a = 5;\nconsole.log(obj.a);",
+    "options": ["1", "5", "undefined", "Error"],
+    "correctIndex": 1
+  },
+  {
+    "id": 216,
+    "topic": "javascript",
+    "difficulty": "ssr",
+    "type": "concept",
+    "question": "¿Qué es el prototype en JavaScript?",
+    "options": [
+      "Una copia de un objeto",
+      "Un mecanismo para heredar propiedades entre objetos",
+      "Una API del navegador",
+      "Un tipo de dato primitivo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 217,
+    "topic": "javascript",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "function a(){ return { b: 1 } }\nconsole.log(typeof a().b)",
+    "options": ["\"number\"", "\"object\"", "\"undefined\"", "\"function\""],
+    "correctIndex": 0
+  },
+  {
+    "id": 218,
+    "topic": "javascript",
+    "difficulty": "ssr",
+    "type": "trick",
+    "question": "¿Qué devuelve typeof NaN?",
+    "options": ["\"NaN\"", "\"number\"", "\"undefined\"", "\"object\""],
+    "correctIndex": 1
+  },
+  {
+    "id": 219,
+    "topic": "javascript",
+    "difficulty": "ssr",
+    "type": "code",
+    "question": "¿Qué imprime este código?",
+    "code": "console.log([1,2,3].reduce((a,b) => a + b))",
+    "options": ["6", "\"123\"", "Error", "undefined"],
+    "correctIndex": 0
+  },
+  {
+    "id": 220,
+    "topic": "javascript",
+    "difficulty": "ssr",
+    "type": "best-practice",
+    "question": "¿Cuál es la forma recomendada de clonar un objeto sin mutarlo?",
+    "options": [
+      "const copy = obj",
+      "const copy = Object.assign({}, obj)",
+      "const copy = obj.clone()",
+      "copy = new Object(obj)"
+    ],
+    "correctIndex": 1
+  }
+]
