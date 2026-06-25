@@ -1,28 +1,61 @@
-
 import './App.css'
 import { Container, Typography, Stack } from '@mui/material'
-import { JavaScriptLogo } from './components/JavaScriptLogo'
 import { Start } from './components/Start'
 import { useQuestionsStore } from './store/questions'
 import { Game } from './components/Game'
+import { JavaScriptLogo } from './components/JavaScriptLogo'
+import { TypeScriptLogo } from './components/TypeScriptLogo'
+import { HTMLLogo } from './components/HtmlLogo'
+import { CSSLogo } from './components/CssLogo'
+import { ReactLogo } from './components/ReactLogo'
 
 function App() {
   const questions = useQuestionsStore(state => state.questions)
   console.log(questions);
-  
 
+  const logos = [JavaScriptLogo, TypeScriptLogo, HTMLLogo, CSSLogo, ReactLogo]
   return (
     <main>
       <Container maxWidth='sm'>
-        <Stack direction='row' gap={2} alignItems='center' justifyContent='center' >
-          <JavaScriptLogo />
+        <Stack direction='column' gap={4} alignItems='' justifyContent='center' >
           <Typography variant='h3' >
-            JavaScript Quiz
+            Frontend Quiz
           </Typography>
+          <Typography variant='h5'>
+            Practica tus conocimientos en las principales tecnologias del desarrollo frontend
+          </Typography>
+
         </Stack>
-        {questions?.length === 0 && <Start /> }
+        {questions?.length === 0 &&
+          (
+            <section>
+
+              <button style={{ margin: "5%", borderRadius: "25px", background: "transparent" }}>
+                <HTMLLogo />
+                <Start />
+              </button>
+               <button style={{ margin: "5%" }}>
+                <CSSLogo />
+                <Start />
+              </button> 
+              <button style={{ margin: "5%" }}>
+                <JavaScriptLogo />
+                <Start />
+              </button>
+              <button style={{ margin: "5%" }}>
+                <TypeScriptLogo />
+                <Start />
+              </button> 
+              <button style={{ margin: "5%" }}>
+                <ReactLogo />
+                <Start />
+              </button>
+
+            </section>
+          )
+        }
         {questions?.length > 0 && <Game />}
-        
+
       </Container>
     </main>
   )

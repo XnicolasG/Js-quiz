@@ -8,8 +8,10 @@ export const Start = () => {
         fetchQuestions(10)
     }
     return (
+        <>
         <Button onClick={handleClick} variant='contained' >
             Empezar!
         </Button>
+        </>
     )
 }
