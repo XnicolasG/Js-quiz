@@ -3,6 +3,17 @@ import { type Question } from '../types'
 import confetti from 'canvas-confetti'
 import { persist } from 'zustand/middleware';
 
+// Store global que maneja todo el estado del quiz:
+// - Lista de preguntas cargadas
+// - Índice de la pregunta actual
+// - Función para cargar preguntas desde data.json
+// - Función para seleccionar una respuesta y marcarla como correcta/incorrecta
+// - Funciones para navegar entre preguntas
+// - Función para reiniciar el quiz
+// Usa persistencia para guardar el progreso en localStorage.
+// También dispara confetti cuando la respuesta es correcta.
+
+
 interface State {
     questions: Question[]
     currentQuestion: number;

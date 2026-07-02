@@ -4,6 +4,12 @@ import type { Question as QuestionType } from '../types'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
+// Componente encargado de mostrar una pregunta individual del quiz.
+// Renderiza: enunciado, código opcional y lista de respuestas.
+// Usa el store (Zustand) para registrar la respuesta seleccionada.
+// Bloquea las opciones una vez que el usuario responde.
+// Colorea cada opción según si fue correcta o incorrecta.
+// También usa SyntaxHighlighter para mostrar código con estilo.
 
 
 export const Question = ({ info }: { info: QuestionType }) => {

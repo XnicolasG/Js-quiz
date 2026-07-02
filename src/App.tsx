@@ -13,7 +13,7 @@ function App() {
   const questions = useQuestionsStore(state => state.questions)
   console.log(questions);
 
-  const logos = [JavaScriptLogo, TypeScriptLogo, HTMLLogo, CSSLogo, ReactLogo]
+ 
   return (
     <main>
       <Container maxWidth='sm'>
@@ -30,7 +30,7 @@ function App() {
           (
             <section>
 
-              <button style={{ margin: "5%", borderRadius: "25px", background: "transparent" }}>
+              <button style={{ margin: "5%",  borderRadius: "25px", background: "transparent" }}>
                 <HTMLLogo />
                 <Start />
               </button>
