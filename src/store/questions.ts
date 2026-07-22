@@ -17,7 +17,7 @@ import { persist } from 'zustand/middleware';
 interface State {
     questions: Question[]
     currentQuestion: number;
-    fetchQuestions: (limit: number) => void,
+    fetchQuestions: (topic: "html" | "css" | "javascript" | "react" | "typescript", limit: number) => void,
     selectAnswer: (questionId: number, answerIndex: number) => void
     goNextQuestion: () => void
     goPreviousQuestion: () => void
@@ -29,7 +29,7 @@ export const useQuestionsStore = create<State>()(persist((set, get) => {
         questions: [],
         currentQuestion: 0,
 
-        fetchQuestions: async (limit: number) => {
+        fetchQuestions: async (topic: "html" | "css" | "javascript" | "react" | "typescript", limit: number) => {
             const response = await fetch('http://localhost:5173/data.json')
             if (!response.ok) throw new Error('Something went wrong !')
             const result = await response.json()

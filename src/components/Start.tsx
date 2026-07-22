@@ -1,11 +1,13 @@
 import { Button } from '@mui/material'
 import { useQuestionsStore } from '../store/questions'
 
-export const Start = () => {
+type Topic = "html" | "css" | "javascript" | "react" | "typescript"
+
+export const Start = ({topic}: {topic: Topic}) => {
     const fetchQuestions = useQuestionsStore(state => state.fetchQuestions)
 
     const handleClick = () => {
-        fetchQuestions(10)
+        fetchQuestions(topic, 10)
     }
     return (
         <>

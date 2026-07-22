@@ -32,23 +32,23 @@ function App() {
 
               <button style={{ margin: "5%",  borderRadius: "25px", background: "transparent" }}>
                 <HTMLLogo />
-                <Start />
+                <Start topic="html" />
               </button>
                <button style={{ margin: "5%" }}>
                 <CSSLogo />
-                <Start />
+                <Start topic='css' />
               </button> 
               <button style={{ margin: "5%" }}>
                 <JavaScriptLogo />
-                <Start />
+                <Start topic='javascript' />
               </button>
               <button style={{ margin: "5%" }}>
                 <TypeScriptLogo />
-                <Start />
+                <Start topic='typescript' />
               </button> 
               <button style={{ margin: "5%" }}>
                 <ReactLogo />
-                <Start />
+                <Start topic='react' />
               </button>
 
             </section>
